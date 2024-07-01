@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain Reaction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chain Reaction</h1>
+        <div class="header">
+            <div id="player1" class="player">Player 1</div>
+            <button id="start-button">Start Game</button>
+            <div id="player2" class="player">Player 2</div>
+        </div>
+        <div class="main-content">
+            <div id="game-board"></div>
+            <div class="rules-box">
+                <h2>Rules</h2>
+                <ul>
+                    <li>The game is played on a 6x6 grid.</li>
+                    <li>Players take turns placing their colored balls in any cell.</li>
+                    <li>Cells have limits: 1 ball in corners, 2 balls on edges, and 3 balls in the center.</li>
+                    <li>When a cell exceeds its limit, it explodes, distributing balls to adjacent cells.</li>
+                    <li>Exploding balls convert the color of any opposing balls in adjacent cells.</li>
+                    <li>The game ends when one player controls all the balls on the board.</li>
+                    <li>Player colors are assigned randomly at the start of each game.</li>
+                    <li>The first move of each player cannot end the game.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="winner-message" class="winner-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
